@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 업다운게임을 만들어주세요 -->
+    <!-- 숫자 범위는 1~100, 기회는 총 6번 -->
+    <!--  -->
+
+    <script>
+        const 범위 = 100;
+        const 기회 = 6;
+
+
+        const 정답 = Math.floor(Math.random() * 범위) + 1
+
+        alert('업다운 게임이 시작됩니다!')
+        alert(`1부터 ${범위}까지의 숫자중 정답이 있습니다.`)
+        alert(`기회는 ${기회}번!`)
+        alert(정답)
+
+
+
+        for (let i = 0; i < 기회; i++) {
+            const 입력 = Number(prompt(`숫자를 입력해주세요! (1~${범위}) 남은기회 : ${기회 - i}`));
+
+            if (입력 === 정답) {
+                alert('정답입니다!');
+                break;
+            } else if (입력 > 정답) {
+                alert('down');
+            } else {
+                alert('up');
+            }
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Math.floor(Math.floor() * 100) + 1
+
+        for (let i = 0; i < 10; i++) {
+            console.log(i);
+
+            if (i == 6) {
+                break;
+            }
+        }
+    </script>
+</body>
+
+</html>
