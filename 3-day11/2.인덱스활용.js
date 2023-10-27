@@ -56,16 +56,11 @@ function 위치적용() {
 
 
 
+const nowPage = document.querySelector('.now-page')
+const totalPage = document.querySelector('.total-page');
+
 totalPage.innerText = 슬라이드갯수;
 
-
-// 인덱스에 따라 나우페이지가 변하게끔
-// 
-
-
-
-const nowPage = document.querySelector('.now-page');
-const totalPage = document.querySelector('.total-page');
 
 
 
