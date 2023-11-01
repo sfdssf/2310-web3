@@ -26,6 +26,7 @@ contentsWrapper.insertBefore(마지막페이지복사본,contentsWrapper.firstEl
 
 let index = 1;
 
+
 totalPage.innerText = 슬라이드갯수;
 console.log(슬라이드갯수)
 
@@ -53,11 +54,10 @@ prevButton.addEventListener('click', ()=>{
         //    setTimeout 함수에는 두개의 인수를 전달한다.
         // 실행할 함수(콜백), 몇초 뒤에 실행할것인지 시간(ms)
 
-        
-
+    
         // 애니메이션 끝난다음에 = 1초뒤에
         // 인덱스를 마지막페이지로 넘기고
-        // 트랜지션 없이 위치적용
+        // 트랜지션 없이 위치 적용
         setTimeout(() => {
 
 

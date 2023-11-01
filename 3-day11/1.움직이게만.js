@@ -32,4 +32,3 @@ function 위치적용() {
 
 
 // prevButton을 누를때 +300
-

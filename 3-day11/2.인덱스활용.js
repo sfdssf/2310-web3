@@ -27,7 +27,7 @@ prevButton.addEventListener('click', ()=>{
 nextButton.addEventListener('click', ()=>{
     index++;
     if(index > 슬라이드갯수-1) {
-        index = 슬라이드갯수-1;
+        index = 0;
     }
     위치적용();
 })
@@ -49,19 +49,15 @@ function 위치적용() {
 // 나우페이지 가져오기
 // 토탈페이지 가져오기
 
-// 인덱스에 따라 나우페이지가 변하게끔
-// 토탈페이지는 전체 슬라이드 갯수로 설정해주세요.
-
-// 나우페이지는 prev, next 버튼을 누를때마다 갱신되어야합니다.
-
-
-
 const nowPage = document.querySelector('.now-page')
 const totalPage = document.querySelector('.total-page');
 
 totalPage.innerText = 슬라이드갯수;
 
+// 인덱스에 따라 나우페이지가 변하게끔
+// 토탈페이지는 전체 슬라이드 갯수로 설정해주세요.
 
+// 나우페이지는 prev, next 버튼을 누를때마다 갱신되어야합니다.
 
 
 nowPage
