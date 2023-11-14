@@ -25,3 +25,45 @@ header.scrolled .hamberger::before {
 
 
 /* '함께하고 있습니다' 섹션 오른쪽에 파란 평행사변형 이동시키기 */
+
+#start-together >.incline {
+    transform: translateX(40%) skewX(-30deg);
+    left: 80%;
+    transition: 1s;
+}
+
+#start-together > .incline.active {
+    transform: skewX(-30deg);
+}
+
+
+/* 앱다운로드 버튼 */
+
+#app-download > .incline {
+    transition: 1s;
+    transform: skewX(-30deg) translateX(120%);
+    transition-delay: 0.3s;
+}
+
+#app-download > figure {
+    transform: 1s;
+    opacity: 0;
+    transition-delay: 0.8s;
+}
+
+#app-download > p {
+    transform: 1s;
+    opacity: 0;
+}
+
+#app-download.active > .incline {
+    transform: skewX(-30deg) translateX(20px);
+}
+
+#app-download.active > figure {
+    opacity: 1;
+}
+
+#app-download.active > p {
+    opacity: 1;
+}

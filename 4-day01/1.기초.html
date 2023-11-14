@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            height: 5000px;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,7 +22,9 @@
         // 마우스휠을 굴리거나, 스크롤바를 조작하거나, 키보드 방향키를 누르는등
         // 어떤 방식으로든 스크롤 위치에 변화가 생겼을때 이벤트를 감지한다.
         // 모바일/pc를 가리지않고 전부 잘 작동되므로 mousewheel보단 scroll을 사용하는것이 좋다.
-        window.
+        window.addEventListener('scroll', (e) => {
+            console.log(e);
+        })
     </script>
 </body>
 

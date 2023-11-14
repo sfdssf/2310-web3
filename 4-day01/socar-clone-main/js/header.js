@@ -13,10 +13,9 @@ window.addEventListener('scroll',()=>{
     }else{ // 그렇지않으면
         header.classList.remove('hide'); // 헤더 나타내기
     }
-    posY = window.scrollY;
-    
+
     // 스크롤이 맨 위에 있을때
-    if(window.scrollY === 0) {
+    if(window.scrollY < 50) {
         header.classList.remove('scrolled');
     } else {
         header.classList.add('scrolled');
@@ -24,6 +23,6 @@ window.addEventListener('scroll',()=>{
     }
     // 스크롤이 맨 위에 있지 않을때
      
-        // getBounding... 은 쓰지않습니다
+    // getBounding... 은 쓰지않습니다
     posY = window.scrollY;
 })

@@ -296,3 +296,22 @@ footer nav {
 
     
 }
+
+
+/* element .style {
+    transition: 1s;
+    transform: translateX(40%) skewX(-30deg);
+}
+*/ 
+
+
+/* .incline { 
+    position: absolute;
+    left: 80%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    transform: skewX(-30deg);
+}
+*/
+
