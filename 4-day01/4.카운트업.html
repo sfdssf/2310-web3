@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="count">0</p>
+    <script>
+        const count = document.getElementById('count');
+
+        // count.innerText = '1'
+
+        // setTimeout(() => {
+        // count.innerText = '2'
+        // }, 1000);
+
+        // setTimeout(() => {
+        // count.innerText = '3'
+        // }, 2000);
+
+        const goal = 9210000;
+        let nowCount = 0;
+        const 지속시간 = 2000;
+        const fps = 60;
+        const 재생횟수 = 지속시간 / 1000 * fps; // 120
+
+
+        for (let i = 0; i < 재생횟수; i++) {
+            const 진행도 = (i + 1) / 재생횟수;
+
+            console.log((진행도));
+
+            setTimeout(() => {
+
+                // nowCount += 10000;
+                count.innerText = `${진행도 * goal}`
+            }, 1000 / fps * i);
+
+        }
+
+
+        function easeInOutQuint(x) {
+            return x < 0.5 ? 16 * x * x * x * x * x : 1 - Math.pow(-2 * x + 2, 5) / 2;
+        }
+
+    </script>
+</body>
+
+</html>
