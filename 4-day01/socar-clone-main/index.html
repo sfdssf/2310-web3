@@ -286,6 +286,34 @@
     </section>
     <script src="js/header.js"></script>
     <script src="js/scroll.js"></script>
+
+    <script>
+        const count = document.querySelector('.count-up');
+
+        const goal = 9234184;
+        let nowCount = 0;
+        const 지속시간 = 2000;
+        const fps = 60;
+        const 재생횟수 = 지속시간 / 1000 * fps;
+
+        for (let i = 0; i < 재생횟수; i++) {
+            const 진행도 = (i + 1) / 재생횟수;
+
+            console.log((진행도));
+
+            setTimeout(() => {
+
+                count.innerText = `${Math.floor(easeInOutQuint(진행도) * goal).toLocaleString()}`
+            }, 1000 / fps * i);
+
+        }
+
+        function easeInOutQuint(x) {
+            return x < 0.5 ? 16 * x * x * x * x * x : 1 - Math.pow(-2 * x + 2, 5) / 2;
+        }
+
+
+    </script>
 </body>
 
 </html>
