@@ -1,0 +1,75 @@
+li.header-menus>a {
+    font-size: 20px;
+    color: gray;
+}
+
+li.header>.header-lang-container {
+    font-size: 15px;
+    color: gray;
+}
+
+
+.intro-video-text {
+    font-size: 50px;
+    color: gray;
+}
+
+
+
+
+.section news {}
+
+.section-title-heading {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.section-title-more {
+    font-size: 20px;
+}
+
+
+
+li.news-contents {
+
+}
+
+
+
+.news-heading {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.news-date {
+    font-size: 15px;
+    color: gray;
+}
+
+.news-image-wrapper>img {
+    height: 100px;
+    width: 200px;
+
+}
+
+
+
+.slide-heading {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.slide-text {
+    font-size: 15px;
+    color: gray;
+}
+
+
+.career-content-heading {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.career-content-text {
+    font-size: 15px;
+}
